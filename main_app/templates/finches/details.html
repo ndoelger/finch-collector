@@ -8,11 +8,6 @@
     <p>Type: {{ finch.type }}</p>
     <p>Description: {{ finch.description }}</p>
     <p>Age: {{ finch.age }}</p>
-    {% if finch.alive == True %}
-    <p>Alive? Yes!</p>
-    {% elif finch.alive == False %}
-    <p>Alive? No :(</p>
-    {% endif %}
   </div>
   <div class="card-action">
     <a href="{% url 'finch_update' finch.id %}">Edit</a>
